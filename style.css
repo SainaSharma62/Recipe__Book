@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    overflow-x: hidden;
+    background: black;
+}
+main{
+    height: 100vh;
+    background-image: url(ingredients-pasta-black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.nav ul{
+    display: flex;
+    color: white;
+    position: relative;
+    left:50%;
+    list-style: none;
+    top: 20px;
+}
+
+.nav ul li{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul li a:hover{
+    color: #b54507;
+}
+
+.nav-menu-btn{
+    display: none;
+}
+
+.nav-menu-btn{
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+
+}
+.container h1{
+    position: relative;
+    left: 10px;
+    color: rgb(218, 208, 208);
+}
+.container p{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    color: rgb(218, 208, 208);
+    font-weight: bolder;
+    font-size: 45px;
+    left: 250px;
+}
+.span{
+    color:rgb(218, 208, 208);
+    width: 450px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    top:100px;
+}
+
+.span span{
+    font-weight: 100;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+       height:1100px;
+    }
+
+    .nav ul li {
+        margin-bottom: 20px;
+        margin-left: -80px;
+    }
+    /* .nav-menu-btn{
+        display: none;
+    }
+    .nav-manu .responsive{
+        left: 0;
+        display: block;
+    } */
+
+    .container h1 {
+        position: relative;
+        bottom: 150px;
+    }
+
+    .container p {
+        font-size: 35px;
+        max-width: 90%;
+        margin-top: 0px;
+        margin-left: 190px;
+        left: 0;
+    }
+
+    .span {
+        width: 100%;
+        left: 0;
+        top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .nav-menu-btn{
+        display: none;
+    }
+    .nav-manu .responsive{
+        left: 0;
+        display: block;
+    }
+
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 24px;
+        padding: 10px;
+        max-width: 100%;
+        left: 0;
+        top: 20px;
+    }
+
+    .span {
+        width: 100%;
+        flex-direction: column;
+        left: 0;
+        top: 20px;
+    }
+}

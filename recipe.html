@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+              <li class="menu"><a href="index.html">HOME</a></li>
+              <li class="menu"><a href="recipe.html">RECIPES</a></li>
+              <li class="menu"><a href="about.html">ABOUT</a></li>
+              <li class="menu"><a href="your-recipe.html">YOUR RECIPES</a></li>
+            </ul>
+        </div>
+
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2>
+                    Find Meals for Your Ingredients
+                </h2>
+                <blockquote>
+                  <div>  
+                  Explore a world of flavors with our curated recipe collection,
+                  perfect for every cooking level. Discover the joy of turning your
+                  culinary dreams into reality—one recipe at a time. Unlock the chef
+                  within and make every meal a masterpiece!
+                  </div>
+                </blockquote>
+                <div class="meal-search-box">
+                    <input type="text" class="search-content" placeholder="Enter Your Food Name" id="search-input">
+                    <button type="submit" class="btn" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="meal-result">
+                <h2 class="title">Your Search Results:</h2>
+
+                <div id="meal">
+                    
+                </div>
+            </div>
+            <div class="meal-details">
+                <button type="button" class="btn-recipe-close-btn" id="recipe-close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="meal-details-content">
+                    <h2 class="recipe-title">Meals Name Here</h2>
+                    <p class="recipe-category">Category Name</p>
+
+                    <div class="recipe-instruct">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum recusandae officiis maiores excepturi aperiam vero quisquam non laudantium necessitatibus omnis accusamus vitae officia porro, culpa eveniet quam fuga! Eos, iusto?
+
+                    </div>
+
+                    <div class="recipe-meal-img">
+                        <img src="poha.jpg" alt="">
+                    </div>
+
+                    <div class="recipe-link">
+                        <a href="" target=" _blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Delicious Recipes</h3>
+                    <p>Your go-to place for finding the best recipes, shared by food lovers worldwide. Explore, cook, and share your own creations with our community!</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/recipe.html">Recipes</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/your-recipe.html">Your Recipes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact1">
+                    <h3>Contact Us</h3>
+                    <p>Email: sainasharma23@navgurukul.org</p>
+                    <p>Phone: +9263709773</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delicious Recipes | All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

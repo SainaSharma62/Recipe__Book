@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe - Delicious Recipe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="your-recipe.css">
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/recipe.html">Recipes</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/your-recipe.html">Your Recipes</a></li>
+        </ul>
+    </div>
+    <section class="add-recipe-section">
+        <div class="container1">
+            <h2>Add Your Own Recipes</h2>
+            <div id="notification" style="display: none;">Yay! Your recipe is now part of our tasty collection! </div>
+            <form id="recipeForm">
+                <div class="form-group">
+                    <label for="recipeName">Recipe Name</label>
+                    <input type="text" id="recipeName" name="recipeName" placeholder="Enter the recipe name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredients">Ingredients</label>
+                    <textarea id="ingredients" name="ingredients" rows="5" placeholder="List the ingredients" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="instructions">Instructions</label>
+                    <textarea id="instructions" name="instructions" rows="8" placeholder="Provide the cooking instructions" required></textarea>
+                </div>
+
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="recipe-display-section">
+        <div class="container">
+            <h2>Recipes:</h2>
+            <div id="recipesContainer" class="recipes-container">
+                <!-- Recipes will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>Delicious Recipes</h2>
+                    <p>Your go-to place for finding the best recipes, shared by food lovers worldwide. Explore, cook, and share your own creations with our community!</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipe.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="your-recipe.html">Your Recipes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact1">
+                    <h3>Contact Us</h3>
+                    <p>Email: sainasharma23@navgurukul.org</p>
+                    <p>Phone: +9263709773</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delicious Recipes | All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
